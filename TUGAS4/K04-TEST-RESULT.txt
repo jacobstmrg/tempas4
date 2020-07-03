@@ -1,0 +1,82 @@
+Script started on Fri Jul  3 20:47:19 2020
+]0;jacob.marulitua@badak: ~/TAHAP4/TUGAS4jacob.marulitua@badak:~/TAHAP4/TUGAS4$ PS1="$ "
+$ date
+Fri Jul  3 20:47:28 WIB 2020
+$ echo $HOSTNAME
+badak
+$ echo $akunGitHub
+jacobstmrg
+$ echo $PSTAMP
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(sleep 1;echo $TMP1-$akunGitHub-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+$ PS1="\$(eval \$PSTAMP)"
+ma200703-204748-4183-TUGAS4/> ma[K[Kmake clean
+rm -f p00 p07 p06 p03 p05 p01 p04 p02 SharedMemoryFile.bin
+200703-204754-834b-TUGAS4/> ./p00
+bash: ./p00: No such file or directory
+200703-204801-4b9e-TUGAS4/> make
+gcc -std=gnu11 -pthread    p00.c share.c share.h   -o p00
+gcc -std=gnu11 -pthread    p07.c share.c share.h   -o p07
+gcc -std=gnu11 -pthread    p06.c share.c share.h   -o p06
+gcc -std=gnu11 -pthread    p03.c share.c share.h   -o p03
+gcc -std=gnu11 -pthread    p05.c share.c share.h   -o p05
+gcc -std=gnu11 -pthread    p01.c share.c share.h   -o p01
+gcc -std=gnu11 -pthread    p04.c share.c share.h   -o p04
+gcc -std=gnu11 -pthread    p02.c share.c share.h   -o p02
+200703-204807-8b0e-TUGAS4/> ./p00
+rekapaska       [START PID[28746] PPID[28463]]
+rekapaska       [Boss is Waiting]
+jacobstmrg      [START PID[28747] PPID[28746]]
+shanniadm       [START PID[28750] PPID[28746]]
+tolhassianipar  [START PID[28753] PPID[28746]]
+hnsmchl         [START PID[28749] PPID[28746]]
+akhmadiponegoro [START PID[28748] PPID[28746]]
+zxrsvy          [START PID[28752] PPID[28746]]
+chelmel18       [START PID[28751] PPID[28746]]
+tolhassianipar  [Good Bye initNoBoss()!]
+shanniadm       [Good Bye initNoBoss()!]
+jacobstmrg      [Good Bye initNoBoss()!]
+hnsmchl         [Good Bye initNoBoss()!]
+zxrsvy          [Good Bye initNoBoss()!]
+akhmadiponegoro [Good Bye initNoBoss()!]
+chelmel18       [Good Bye initNoBoss()!]
+rekapaska       [All NoBosses are ready!]
+tolhassianipar  [Yes, I am ready!]
+jacobstmrg      [Yes, I am ready!]
+shanniadm       [Yes, I am ready!]
+hnsmchl         [Yes, I am ready!]
+jacobstmrg      [progs[01] TIME[005] MMAP[OPEN] VALUE[800] [][][][]]
+shanniadm       [progs[02] TIME[006] MMAP[OPEN] VALUE[500] [][][][]]
+tolhassianipar  [progs[00] TIME[007] MMAP[OPEN] VALUE[200] [][][][]]
+rekapaska       [Yes, I am ready!]
+zxrsvy          [Yes, I am ready!]
+akhmadiponegoro [Yes, I am ready!]
+hnsmchl         [progs[03] TIME[014] MMAP[OPEN] VALUE[600] [tolhassianipar][jacobstmrg][shanniadm][][][][]]
+shanniadm       [progs[02] TIME[015] MMAP[OPEN] VALUE[500] [tolhassianipar][jacobstmrg][shanniadm][][][][]]
+jacobstmrg      [progs[01] TIME[016] MMAP[OPEN] VALUE[800] [tolhassianipar][jacobstmrg][shanniadm][][][][]]
+tolhassianipar  [progs[00] TIME[017] MMAP[OPEN] VALUE[200] [tolhassianipar][jacobstmrg][shanniadm][][][][]]
+shanniadm       [BYEBYE === ===== ===== =====]
+jacobstmrg      [BYEBYE === ===== ===== =====]
+tolhassianipar  [BYEBYE === ===== ===== =====]
+rekapaska       [progs[04] TIME[018] MMAP[OPEN] VALUE[900] [tolhassianipar][jacobstmrg][shanniadm][][][][]]
+zxrsvy          [progs[05] TIME[019] MMAP[OPEN] VALUE[300] [tolhassianipar][jacobstmrg][shanniadm][][][][]]
+akhmadiponegoro [progs[06] TIME[020] MMAP[OPEN] VALUE[700] [tolhassianipar][jacobstmrg][shanniadm][][][][]]
+chelmel18       [Yes, I am ready!]
+hnsmchl         [progs[03] TIME[023] MMAP[OPEN] VALUE[600] [tolhassianipar][jacobstmrg][shanniadm][hnsmchl][][][][]]
+hnsmchl         [BYEBYE === ===== ===== =====]
+zxrsvy          [progs[05] TIME[027] MMAP[OPEN] VALUE[300] [tolhassianipar][jacobstmrg][shanniadm][hnsmchl][rekapaska][zxrsvy][akhmadiponegoro][]]
+rekapaska       [progs[04] TIME[028] MMAP[OPEN] VALUE[900] [tolhassianipar][jacobstmrg][shanniadm][hnsmchl][rekapaska][zxrsvy][akhmadiponegoro][]]
+akhmadiponegoro [progs[06] TIME[029] MMAP[OPEN] VALUE[700] [tolhassianipar][jacobstmrg][shanniadm][hnsmchl][rekapaska][zxrsvy][akhmadiponegoro][]]
+zxrsvy          [BYEBYE === ===== ===== =====]
+akhmadiponegoro [BYEBYE === ===== ===== =====]
+chelmel18       [progs[07] TIME[030] MMAP[OPEN] VALUE[400] [tolhassianipar][jacobstmrg][shanniadm][hnsmchl][rekapaska][zxrsvy][akhmadiponegoro][]]
+chelmel18       [progs[07] TIME[032] MMAP[OPEN] VALUE[400] [tolhassianipar][jacobstmrg][shanniadm][hnsmchl][rekapaska][zxrsvy][akhmadiponegoro][chelmel18]]
+chelmel18       [BYEBYE === ===== ===== =====]
+rekapaska       [BYEBYE === ===== ===== =====]
+200703-204910-363e-TUGAS4/> ./p0x[K1
+jacobstmrg      [START PID[28827] PPID[28463]]
+jacobstmrg      [Good Bye initNoBoss()!]
+ShareMemory is NOT OPEN, BYE BYE ==== ====
+200703-204921-7e05-TUGAS4/> exit
+exit
+
+Script done on Fri Jul  3 20:49:31 2020
